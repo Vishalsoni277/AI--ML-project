@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('photo/ackground.jpg') center/cover no-repeat;
+        }
+
+        .navbar {
+            background: transparent !important;
+        }
+
+        .navbar a {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ffd700 !important;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            top: -20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            color: #ffd700;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: background-color 0.5s ease, transform 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: transparent;
+            margin: 10px auto;
+            border: 2px solid #fff;
+        }
+
+        .section:hover {
+            background-color: rgba(0, 128, 0, 0.7);
+            transform: scale(1.05);
+        }
+
+        .section img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.1s ease;
+        }
+
+        .section img:hover {
+            transform: scale(1.0);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                font-size: 1.25rem;
+            }
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+
+        .navbar a {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ffd700 !important;
+        }
+
+        body {
+            padding-top: 60px;
+            /* Add padding for fixed navbar */
+        }
+    </style>
+</head>
+
+<body background="photo/ackground.jpg">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">The Online Shop</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <h1>The Online Shop</h1>
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+        <div class="row w-100">
+            <div class="col-12 col-sm-6 d-flex justify-content-center">
+                <div class="section men-section d-flex justify-content-center align-items-center">
+                    <a href="male.html">
+                        <img src="photo/male.jpg" alt="Men">
+                        <center style="background-color: rebeccapurple;">
+                            Men Section
+                        </center>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 d-flex justify-content-center">
+                <div class="section women-section d-flex justify-content-center align-items-center">
+                    <a href="female.html">
+                        <img src="photo/women.avif" alt="Women">
+                        <center style="background-color: rebeccapurple;">
+                            Women Section
+                        </center>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
